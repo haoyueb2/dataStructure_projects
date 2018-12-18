@@ -115,9 +115,9 @@ public:
 			}
 			else {
 				p = p->link;
-			}	
+			}
 		}
-		cout << "can not find";
+		cout << "can not find" << endl;
 		return NULL;
 	}
 	//修改学生信息
@@ -135,7 +135,8 @@ public:
 };
 void outputstud(LinkNode *p) {
 	int space = 18;
-	cout << setw(4) << p->data.id << setw(space) << p->data.name << setw(space) << p->data.sex << setw(space) <<
+	if (p != NULL)
+		cout << setw(4) << p->data.id << setw(space) << p->data.name << setw(space) << p->data.sex << setw(space) <<
 		p->data.age << setw(space) << p->data.type << endl;
 }
 int main() {
@@ -168,7 +169,8 @@ int main() {
 			p = students->search(id2);
 			int space;
 			space = 18;
-			cout << "考号" << setw(space) << "姓名" << setw(space) << "性别" << setw(space) << "年龄"
+			if (p != NULL)
+				cout << "考号" << setw(space) << "姓名" << setw(space) << "性别" << setw(space) << "年龄"
 				<< setw(space) << "报考类别" << endl;
 			outputstud(p);
 			break;
@@ -187,10 +189,10 @@ int main() {
 
 		}
 		operation = 0;
-		cout << "请选择您要进行的操作:(1为插入，2为删除，3为查找，4为修改，5为统计，0为取消操作）" ;
+		cout << "请选择您要进行的操作:(1为插入，2为删除，3为查找，4为修改，5为统计，0为取消操作）";
 		cin >> operation;
 		cout << endl;
 	}
-	cout << "您已取消操作"<<endl;
+	cout << "您已取消操作" << endl;
 	return 0;
 }
