@@ -210,6 +210,7 @@ int main() {
 		cout << "ÇëÑ¡Ôñ²Ù×÷£º";
 		cin >> order;
 	}
+	system("pause");
 	return 0;
 }
 

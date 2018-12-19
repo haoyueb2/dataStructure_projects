@@ -71,5 +71,6 @@ int main() {
 		}
 		time++;
 	}
+	system("pause");
 	return 0;
 }

@@ -194,5 +194,6 @@ int main() {
 		cout << endl;
 	}
 	cout << "您已取消操作" << endl;
+	system("pause");
 	return 0;
 }

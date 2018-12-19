@@ -202,5 +202,6 @@ int main() {
 	else {
 		cout << 0;
 	}
+	system("pause");
 	return 0;
 }

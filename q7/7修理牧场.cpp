@@ -114,6 +114,7 @@ int main() {
 	cout << "总价格为:" << endl;
 	cout << totalPrice;
 	delete priQueue;
+	system("pause");
 	return 0;
 }
 	

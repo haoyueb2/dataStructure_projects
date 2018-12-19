@@ -76,6 +76,7 @@ int main() {
 	else {
 		cout << "Ñ°Â·Ê§°Ü\n";
 	}
+	system("pause");
 	return 0;
 }
 	

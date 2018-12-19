@@ -223,6 +223,7 @@ int main() {
 		cin >> order;
 		cout << endl;
 	}
+	system("pause");
 	return 0;
 }
 		

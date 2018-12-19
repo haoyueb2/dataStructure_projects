@@ -102,7 +102,7 @@ int main() {
 	while (!opera_stack.isEmpty()) {
 		output(opera_stack.pop());
 	}
-
+	system("pause");
 	return 0;
 }
 

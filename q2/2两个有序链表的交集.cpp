@@ -80,6 +80,7 @@ int main() {
 	s2->build();
 	cout << "½á¹ûÎª:" << endl;
 	output(intersection(s1, s2));
+	system("pause");
 	return 0;
 }
 	
